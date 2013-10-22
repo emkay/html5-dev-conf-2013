@@ -275,3 +275,121 @@ Animate only
 * Memory can quickly get out of hand!
 * Reduce CPU/GPU communication
 * Use Browser dev tools to test
+
+### JavaScript Insights: Tools for Improving JS Code Quality
+Speaker: [Ariya Hidayat](http://twitter.com/ariyahidayat) & [Ann Robson](http://twitter.com/arobson), Sencha/Yammer
+
+The co-speaker thing is weird.
+
+#### Why JavaScript code Quality Tools?
+
+It's how we work together. And it's how we level up. Robert Downey Jr. -> Iron Man.
+
+#### JavaScript Tools
+* varied
+* some to be developed
+* all are open source
+
+##### Power(ful) Tools
+
+* Linter
+* Code Coverage
+* Cyclomatic Complexity
+
+###### Linter
+* Enforces style guide
+* Team standards: .jshintrc
+
+Yammer team doesn't really agree on code style, so they don't have a .jshintrc.
+
+###### Code Coverage
+
+Istanbul
+
+###### Code Complexity
+
+* [jscomplexity](http://jscomplexity.org)
+* [plato](http://github.com/es-analysis/plato)
+
+
+### Creating Cross-Platform Games with One HTML5 Code Base
+Speaker: [Tyler Smith](http://twitter.com/html5tyler)- html5 tech evangelist for Intel
+
+#### Overview
+* Decide if you should use a game engine
+* What to look for before you decide to develop for a platform
+* Optimize mobile performance
+* Browsers versus hybrid app deployment
+* Accelerating your html5 game to look native
+* Packaing and deploy your game
+
+#### Should I use a Game Engine
+
+##### How to decide
+* How complex will your game be? (collision detection, level creator, sprite animator, multi-player)
+* Have you made an html5 game before?
+* What's your time frame?
+
+If you haven't made a game before maybe dabble with a game engine to learn other peoples mistakes and see how things work.
+
+Builing your own:
+* more time intensive
+* Optimized for your game
+* Lean functionality
+
+Use a game engine:
+* Less time to get started
+* Bigger code base
+* a lot of funtionality
+
+#### Game Engines
+* Is it designed to be responsive?
+* Maintained/Forums/Support
+* Debugging tools
+* Cost
+* Does it run well on mobile?
+* Does the game engine allow pre-rendering
+
+#### Research Supported Platforms
+* Controls
+    * Placement on screen
+    * How will they appear/work while on desktop?
+    * Will you need multi-touch
+* HTML5 Support
+    * Canvas tag
+    * Audio tag
+    * HTML5 performance
+* Screen width/height
+
+html5hub article on landscape screen width
+
+#### Mobile Performance
+* Huge performance bump on mobile webview
+* Manage draw calls
+* Size optimazation
+    * Pull sound out of the binary
+    * Dynamically cache depending on device
+    * Use jpegs isntead of pngs when able (1/10 of kb)
+
+#### Hybrid App vs Browser (Mobile)
+
+Hybrid Deployment:
+* Sell in the app stores
+* Native in app purchasing
+* Native JS API for social integration
+* Full screen
+* locking orientation
+* Access to harware acceleration
+* Native sounds
+
+Browser Deployment:
+* HTML5 Ad networks
+* New tab and sign in
+* No more full screen in iOS7
+* No locking orientation
+* Nitro in Safari (iOS)
+* V8 engine (Android)
+* Audio tag
+
+Phaser
+impactjs
