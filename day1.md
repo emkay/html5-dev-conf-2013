@@ -142,4 +142,90 @@ QA it like crazy so they make sure they get it right. Make sure there are no bug
 Make sure there are lots of features to QA/Release.
 
 
+## Second Session
+
+### Unmasking the GPU: Using Hardware Acceleration Correctly with CSS
 Speaker: [Divya Manian](http://html5devconf.com/speakers/divya_manian.html), Adobe
+
+#### Web Platform Team
+
+http://html.adobe.com/webplatform
+http://makethewebawesome.com
+
+Features they work on:
+* Regions
+* Shapes
+* __Blend Modes__
+* __Filters__
+
+#### Paint the Pixels
+
+Browsers just paint the pixels on the screen.
+
+How do the pixels render? Creates DOM, matches styles to the DOM nodes, etc.
+
+##### Layout/Reflow
+Calculation of information required to display visible DOM nodes.
+
+##### When does it happen?
+* Style changes
+* Fetching of layout values/scroll values.
+* Adding/removing elements from the DOM
+
+#### How to minimize Layout?
+* Move content away from the flow.
+* Use only on the element with least children.
+* Apply layout changes on `requestAnimationFrame`
+
+See talk: [Rendering without the lumpy bits](http://vimeo.com/64733304) by Jake Archibald.
+
+Do not read/write for every `requestAnimationFrame` as it makes things janky.
+
+#### Paints
+Browser changes the pixel values of an area of the viewport
+
+##### Two Kinds of painting
+* Paint an element
+* Combine overlapping elements to present a flat image in the viewport
+
+##### When does it happen?
+* Scrolling
+* Hover
+* Basically all the time
+
+#### Render Layers
+
+Stacking contexts create RenderLayer Objects
+
+##### Traditional Stacking Contexts
+* Root Object(html)
+* position: relative, position: absolute
+* opacity < 1
+* overflow is set
+
+CPU paints to ONE Bitmap on the screen, which is the viewport. 
+
+##### GPU
+Like the CPU but optimized for processing large blocks of data in parallel.
+
+##### What happens to painting when the GPU is involved?
+
+###### New Stacking Contexts
+* Transforms
+* Blend Modes
+* Filters
+
+Now there are:
+* Many bitmaps not just ONE.
+* Most bitmaps rendered directly by GPU.
+* Broswer determines which render layers go into which bitmap
+
+###### How does the browser decide which bitmaps are painted by the GPU?
+
+* Intense painting occurs: video WebGL or canvas
+* 3D Transformed elements
+* Animated filters, masks, blend modes, reflections, opacity
+* position: fixed
+* content overlapping existing GPU-rendered bitmaps
+
+
