@@ -381,6 +381,9 @@ Hybrid Deployment:
 * locking orientation
 * Access to harware acceleration
 * Native sounds
+* Less fragmented environment
+* Acess to local machine resources
+* Desktop Icon
 
 Browser Deployment:
 * HTML5 Ad networks
@@ -390,6 +393,23 @@ Browser Deployment:
 * Nitro in Safari (iOS)
 * V8 engine (Android)
 * Audio tag
+* Multiple Browsers
+* Restricted to browser
+* Bookmark
+
+#### Hardware Acceleration
+* Graphics acceleration speeds up html5 2-10 times
+* Multi-touch support for Android
+* Still write once and deploy everywhere
+* WebGL support
+
+
+#### Deploy
+* PhoneGap (iOS, Android, Blackberry, Windows Phone 8, WebOS)
+* Intel XDK (iOS, Android, Amazon, Nook, Windows 8, Tizen, Facebook, Chrome, WebApp)
+* Cocoon (iOS, Android (WebGL support))
+* Ejecta (iOS WebGL)
+* Awesomium (EXE DMG)
 
 Phaser
 impactjs
