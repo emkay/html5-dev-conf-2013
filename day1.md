@@ -208,6 +208,18 @@ CPU paints to ONE Bitmap on the screen, which is the viewport.
 ##### GPU
 Like the CPU but optimized for processing large blocks of data in parallel.
 
+* No Repains, relayouts
+* If area is large, tiled textures to swap in and out textures quickly
+* Larger power consumption (vs. not using the features)
+
+GPU reduces burden on CPU, but
+* Limited by memory
+* Limited by CPU/GPU bandwidth for communication
+
+###### Flicker Happens
+* GPU scrambles to swap new textures into tiles as you scroll
+* Browser is switching from CPU rendering to a GPU rendering
+
 ##### What happens to painting when the GPU is involved?
 
 ###### New Stacking Contexts
@@ -228,4 +240,38 @@ Now there are:
 * position: fixed
 * content overlapping existing GPU-rendered bitmaps
 
+#### Memory
+* All data & GPU textures are stored.
+* Android & iOS can force quit browser or webview to free memory (unlike Desktop).
+* More apps open, smaller the size of memory availble to your page.
 
+#### Reduce Memory Usage
+* Smaller images (dimensions of image * 4 bytes)
+* Smaller js/css files
+* Smaller/fewer textures to GPU
+* Fewer GPU layers
+
+#### Reduce CPU/GPU Communication
+Animate only
+* Opacity
+* Transform
+* Filters
+* Blend Modes
+
+##### Others
+* Don't animate z-index
+* try not to animate non-hardware-accelerated properties on GPU-accelerated content.
+* Use Opacity to toggle visibility of GPU-accelerated content
+
+##### Why Opacity?
+* Textures remain in the GPU
+* visibility: hidden removes textures from GPU
+* display: none causes repaints
+* removing elements from DOM causes style recalculations, layout, repaint, firing of events.
+
+#### In Summary
+* Rendering is a beast.
+* Do layout, repaint, GPU acceleration apringly.
+* Memory can quickly get out of hand!
+* Reduce CPU/GPU communication
+* Use Browser dev tools to test
