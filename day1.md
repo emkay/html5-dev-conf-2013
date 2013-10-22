@@ -22,7 +22,7 @@ Mainframes doing tasks. Punchcards. Very scarce resource.
 
 ##### Lifestyle
 
-PC Era moved us into lifestyle computing. Moores law. Put notebooks, tablets, etc. into the hands of people. 
+PC Era moved us into lifestyle computing. Moores law. Put notebooks, tablets, etc. into the hands of people.
 
 Device centric.
 
@@ -88,5 +88,58 @@ HTML5 community for developers.
 
 ## First Session
 
-### Unmasking the GPU: Using Hardware Acceleration Correctly in CSS
+### Scaling Mobile Development @twitter
+Speaker: [@jeremysf](https://twitter.com/jeremysf)
+
+#### Features
+
+Different buckets of features.
+
+* Business partners -> Comcast -> change DVR stuff inside a tweet
+* Fema Twitter Alerts
+* Platform specific - photo filters. 
+* Core Twitter - Conversations - messing with the timeline. 
+* Platform - Twitter Cards
+
+#### History of Engineering around Mobile
+Early on twitter wasn't super stable. Implemented as a monolithic rails app. Did not scale.
+
+Decomposed the monolith to SOA. Broke it down to a number of different services. Moved to JVM using Scala.
+
+Huge shift to how twitter thought about engineering.
+
+Past year alone twitter has doubled in users. Lot's more mobile users.
+
+Mobile started out with a couple folks in the corner. Mobile was hitting the same public API that the rest of the services were using.
+
+Started out as a mobile first service (SMS) and evolved to a web orientated company and api based service.
+
+Brought in a bunch of employees that were super excited about mobile.
+
+Didn't have a ton of mobile engineers. Started taking a mobile engineer and embedding them in different teams.
+Engineer didn't have time to get domain knowledge on the team, there wasn't a sense of ownership of the code for the mobile dev.
+
+How do you get feedback on how the mobile enginner is doing since they are switching teams so much?
+
+Next step was to build full stack teams with mobile integrated on the team.
+
+#### Culture Shift
+Some of the biggest stumbling blocks.
+
+The number one problem, iPhone. Everyone in the company is carrying an iPhone. 
+But Android is a huge platform that you can't ignore.
+
+Mobile is Android AND iPhone. Started talking about Android features first. Use the phones that your customers use.
+
+Getting people to understand that mobile is not like the web. App is out there forever. 
+Yes there is autoupdate on Android and now on iOS 7, but version is out there for life. Hopefully people will update.
+
+Have ideas and then measure them.
+
+#### Tech Challenges
+Apple app store process has changed the way they operate. 15 day review process. 
+QA it like crazy so they make sure they get it right. Make sure there are no bugs.
+Make sure there are lots of features to QA/Release.
+
+
 Speaker: [Divya Manian](http://html5devconf.com/speakers/divya_manian.html), Adobe
