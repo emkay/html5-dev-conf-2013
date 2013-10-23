@@ -411,5 +411,29 @@ Browser Deployment:
 * Ejecta (iOS WebGL)
 * Awesomium (EXE DMG)
 
-Phaser
-impactjs
+[Phaser](https://github.com/photonstorm/phaser)
+[impactjs](http://impactjs.com/)
+
+
+### Javascript for Makers
+Speaker: [Peter Christensen](http://pchristensen.com)
+
+#### Why is software different?
+* Hello world of software is easier than hello world of surgery
+* Software is easy to distribute
+* huge variety of tools
+
+#### What if the UI went beyond the browser?
+Maker Faire (videos of robotic bugs, car with fish and lobsters singing)
+
+#### Hardware becoming software
+[The Hardware Renaissance by PG](http://www.paulgraham.com/hw.html)
+
+* arduinos
+* raspberry pi
+
+You don't have to figure out a lot of the hard things about hardware to use them in your software anymore.
+The community around hardware -> software has grown.
+
+#### How did I get involved?
+[OpenROV](http://openrov.com/)
