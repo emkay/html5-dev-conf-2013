@@ -145,3 +145,95 @@ Speaker: Nick Desaulniers (Mozilla)
 Slides: http://slid.es/nickdesaulniers/jsos
 
 The slides are really good so just go through those.
+
+The demo with FirefoxOS dev tools in Firefox Nightly was pretty awesome.
+Firefox Nightly
+about:app-manager
+
+
+##  Refactoring Web Interfaces
+Speaker: [Jina Bolton](https://twitter.com/jina) (Do)
+
+"It used to be that designers made an object and walked away. 
+Today the emphasis must shift to designing the entire life cycle." -- Paul Saffo
+
+People think of refactoring as busy work, but we shouldn't. There is usually always room for improvement in your codebase.
+
+* Lack of clarity -> confusion. 
+* No maintainability -> inefficiency
+
+Refactoring: change the structure without changing the behavior.
+
+### Refactoring, Style Guides, and Sass
+Use a pre-processor:
+[Sass](http://sass-lang.com)
+
+Style Guide:
+* [Writing an interface style guide](http://alistapart.com/article/writingainterfacestyleguide)
+* [Front-end Maintainability with Sass and Style Guides](https://blog.engineyard.com/2011/front-end-maintainability-with-sass-and-style-guides)
+
+Don't create pages. Create systems. Living style guides.
+
+
+Make Refactoring and Documentation a regular part of your review process
+
+"A fractured process makes for a fractured user experience" - Nate Fortin
+
+### Css Gatekeeper
+Any time anyone does anything FE related tag person in the PR to review.
+
+Don't try to document __everything at once__.
+Do document going forward.
+
+Revising something?
+__Refactor it__
+
+When code style preferences come up in code reviews, document it for reference in later code reviews.
+
+http://smacss.com
+
+### Document your ideal CSS Architecture
+* Vendor libs - bootstrap, compass, etc.
+* Dependencies
+* Foundation - typography, etc.
+* Components - modular components and their states
+* Regions - Page regions named after their role names.
+* Helpers - clearfix, etc.
+* Responsive - adjustments to type, grids, images, layout, etc.
+* Tools -  Visible grids and diagnostic CSS
+
+
+* Put new CSS in place
+* Move old CSS as you get to it
+* Move more when you have time
+
+### Make a UI Lib
+Really good example of a UI lib: Android style guide.
+oocss
+
+* Content
+    * text
+    * lists
+    * tables
+* Nav
+    * tabs
+    * pagination
+    * filters
+    * sorters
+* Status
+    * progress
+    * alerts
+    * toasts
+* Interactions
+* Icons
+
+Keep documentation current and useful.
+
+### Get to know the tools you use
+
+
+### Libs 
+[Susy](http://susy.oddbird.net/)
+
+### Misc.
+[Box-sizing: Border-box FTW](http://www.paulirish.com/2012/box-sizing-border-box-ftw/)
