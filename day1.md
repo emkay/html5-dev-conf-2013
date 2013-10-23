@@ -146,6 +146,7 @@ Make sure there are lots of features to QA/Release.
 
 ### Unmasking the GPU: Using Hardware Acceleration Correctly with CSS
 Speaker: [Divya Manian](http://html5devconf.com/speakers/divya_manian.html), Adobe
+[Slides](http://nimbu.in/html5devconf-oct/)
 
 #### Web Platform Team
 
@@ -437,3 +438,39 @@ The community around hardware -> software has grown.
 
 #### How did I get involved?
 [OpenROV](http://openrov.com/)
+
+#### How can you get started?
+* [Make: Zero to Maker](http://www.zerotomaker.com/)
+* [Arduino](http://www.arduino.cc/)
+* [Raspberry Pi](http://www.raspberrypi.org/)
+* [Beagle Bone](http://beagleboard.org/Products/BeagleBone)
+* [Tessel - microcontroller that runs javascript](http://tessel.io/)
+
+##### Get Involved
+* Add to their software
+* Improve software practices
+* Misc. contributions
+* Build on hardware apis
+
+#### Electronics Crash Course
+* Electrons flow from neg to pos (current)
+* if there's no path, the flow stops (circuit)
+* you can put stuff in the circuit to use, alter or react
+
+[resources for electronics learning](http://learn.adafruit.com/)
+
+#### Javascript for Makers
+
+Enabling libraries:
+* [node-serialport](https://github.com/voodootikigod/node-serialport)
+* [Firmata - common protocol for controlling boards](https://github.com/jgautier/firmata)
+* [johnny-five](https://github.com/rwaldron/johnny-five)
+
+##### NodeBots - Hack Hardware with KS
+A full day event where JS developers team up in groups of 3 with soldering guns and parts nearby to create amazing robotic devices.
+
+#### Gateway Hardware
+Was going to bring in a drone but it broke :(
+* [ar-drone](http://ardrone2.parrot.com/)
+* [node-ar-drone](https://github.com/felixge/node-ar-drone)
+* [voxel-drone](http://shama.github.io/voxel-drone/)
