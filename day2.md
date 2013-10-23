@@ -1,7 +1,7 @@
 # Day 2 - October 23rd
 
 ## Which Way is Forward
-Speaker: Crockford
+Speaker: Doug Crockford (Paypal)
 
 Progress does not wait for the next new idea.
 
@@ -139,3 +139,9 @@ Hard to distinguish the two.
 
 One way, is if the reason you think it's a bad idea is emotional it might be a paradigm shift.
 
+
+## Always Bet On JS: The Convergence of Operating System and Browser
+Speaker: Nick Desaulniers (Mozilla)
+Slides: http://slid.es/nickdesaulniers/jsos
+
+The slides are really good so just go through those.
